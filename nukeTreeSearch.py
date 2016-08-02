@@ -35,6 +35,9 @@ class myWidget(QtGui.QDialog):
     def __init__(self):
         super(myWidget, self).__init__()
 
+        # self.setWindowFlags(QtCore.Qt.Tool) # without this the win will not stay ontop
+        # self.setWindowFlags(QtCore.Qt.FramelessWindowHint)
+
 
 
         self.setMinimumSize(200, 300)
